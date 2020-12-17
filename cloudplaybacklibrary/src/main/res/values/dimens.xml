@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="cloud_video_timeline_height">75dp</dimen>
+    <dimen name="cloud_video_reload_recodelist">36dp</dimen>
+    <dimen name="cloud_play_data_line_heigh">40dp</dimen>
+
+    <dimen name="dip_40">40dip</dimen>
+</resources>

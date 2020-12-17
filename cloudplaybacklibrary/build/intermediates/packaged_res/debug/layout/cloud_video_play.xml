@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.ivyiot.playback.DateLine
+        android:id="@+id/dl_history_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cloud_play_data_line_heigh"
+        android:background="@color/light_cloud_video_date_line_bg" />
+
+    <View
+        android:id="@+id/view_calendar_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dl_history_data"
+        android:background="@color/light_reverse_90" />
+
+    <FrameLayout
+        android:id="@+id/fl_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cloud_video_timeline_height"
+        android:layout_below="@+id/view_calendar_top_line">
+        <!---->
+        <com.ivyiot.playback.TimeLineView
+            android:id="@+id/timeline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_cloud_video_date_line_bg"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_loadfail_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/timeline_loadfail_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_reload_recodelist"
+            android:layout_width="@dimen/cloud_video_reload_recodelist"
+            android:layout_height="@dimen/cloud_video_reload_recodelist"
+            android:layout_gravity="center"
+            android:background="@drawable/history_refresh_nor"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DateLine">
+        <attr name="dateTextNorColor" format="reference|color" />
+        <attr name="dateTextSelectColor" format="reference|color" />
+        <attr name="dateDotColor" format="reference|color" />
+    </declare-styleable>
+    <!-- 自定义属性 -->
+    <declare-styleable name="TimeLineView">
+        <attr name="timeScaleColor" format="reference|color" />
+        <attr name="timeTextColor" format="reference|color" />
+        <attr name="cloudVideoNorColor" format="reference|color" />
+        <attr name="middleLineColor" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="DownloadButton">
+        <attr name="progressColor" format="reference|color" />
+        <attr name="downloadIcon" format="reference" />
+    </declare-styleable>
+
+</resources>

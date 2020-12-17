@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CloudPlaybackActivity">
+
+
+    <com.ivyiot.playback.IvyCloudVideoView
+        android:id="@+id/cloud_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        app:surface_type="texture_view"
+        />
+
+    <!--
+    <com.ivyiot.playback.IvyCloudTimeView
+        android:id="@+id/cloud_time_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+-->
+
+    <com.ivyiot.playback.DateLine
+        android:id="@+id/dl_history_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cloud_play_data_line_heigh"
+        android:background="@color/light_cloud_video_date_line_bg"
+        app:dateTextNorColor = "@color/light_text_unselected"
+        app:dateTextSelectColor = "@color/light_text_selected"
+        app:dateDotColor = "@color/light_have_cloud_dot"/>
+
+    <com.ivyiot.playback.TimeLineView
+        android:id="@+id/timeline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cloud_video_timeline_height"
+        android:background="@color/light_cloud_video_date_line_bg"
+        app:timeScaleColor = "@color/light_reverse_90"
+        app:timeTextColor = "@color/light_reverse_40"
+        app:cloudVideoNorColor = "@color/timeline_have_cloud"
+        app:middleLineColor = "@color/text_white"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <Button
+                    android:id="@+id/btn_cloud_pause"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="暂停播放" />
+
+                <Button
+                    android:id="@+id/btn_cloud_resume"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="恢复播放" />
+
+                <Button
+                    android:id="@+id/btn_cloud_seek"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="指定时间戳播放" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <Button
+                    android:id="@+id/btn_cloud_audio_open"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="打开声音" />
+
+                <Button
+                    android:id="@+id/btn_cloud_audio_close"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="关闭声音" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

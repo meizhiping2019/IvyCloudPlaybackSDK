@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_cloud_video_date_line_bg">#DCE3F3</color>
+    <color name="light_have_cloud_dot">#747c90</color>
+    <color name="light_reverse_40">#99000000</color>
+    <color name="light_reverse_90">#1A000000</color>
+    <color name="light_text_selected">#E6000000</color>
+    <color name="light_text_unselected">#4D000000</color>
+    <color name="light_time_line_bg_doorbellleave">#809D4CD2</color>
+    <color name="light_time_line_bg_face">#80669F1B</color>
+    <color name="light_time_line_bg_human">#80DB2A35</color>
+    <color name="light_time_line_bg_humidity">#8003BCC9</color>
+    <color name="light_time_line_bg_io">#8057340E</color>
+    <color name="light_time_line_bg_motion">#80B27511</color>
+    <color name="light_time_line_bg_other">#80D1C138</color>
+    <color name="light_time_line_bg_sound">#8000419A</color>
+    <color name="light_time_line_bg_temperature">#80C160A5</color>
+    <color name="light_timeline_have_cloud">#803F7BCB</color>
+    <color name="text_white">#ffffff</color>
+    <color name="timeline_have_cloud">#803f78be</color>
+    <color name="timeline_loadfail_bg">#cc000000</color>
+    <declare-styleable name="DateLine">
+        <attr format="reference|color" name="dateTextNorColor"/>
+        <attr format="reference|color" name="dateTextSelectColor"/>
+        <attr format="reference|color" name="dateDotColor"/>
+    </declare-styleable>
+    <declare-styleable name="DownloadButton">
+        <attr format="reference|color" name="progressColor"/>
+        <attr format="reference" name="downloadIcon"/>
+    </declare-styleable>
+    <declare-styleable name="TimeLineView">
+        <attr format="reference|color" name="timeScaleColor"/>
+        <attr format="reference|color" name="timeTextColor"/>
+        <attr format="reference|color" name="cloudVideoNorColor"/>
+        <attr format="reference|color" name="middleLineColor"/>
+    </declare-styleable>
+    <dimen name="cloud_play_data_line_heigh">40dp</dimen>
+    <dimen name="cloud_video_reload_recodelist">36dp</dimen>
+    <dimen name="cloud_video_timeline_height">75dp</dimen>
+    <dimen name="dip_40">40dip</dimen>
+    <string name="app_name">CloudPlaybackLibrary</string>
+</resources>

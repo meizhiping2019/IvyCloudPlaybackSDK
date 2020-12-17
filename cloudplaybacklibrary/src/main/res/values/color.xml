@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_text_selected">#E6000000</color>
+    <color name="light_text_unselected">#4D000000</color>
+    <color name="light_have_cloud_dot">#747c90</color>
+    <color name="light_cloud_video_date_line_bg">#DCE3F3</color>
+    <color name="light_reverse_90">#1A000000</color>
+    <color name="timeline_loadfail_bg">#cc000000</color> <!-- 时间轴背景80%透明值 -->
+    <color name="timeline_have_cloud">#803f78be</color> <!-- 时间轴背景50%透明值 -->
+    <color name="light_reverse_40">#99000000</color>
+    <color name="light_timeline_have_cloud">#803F7BCB</color>
+    <color name="text_white">#ffffff</color> <!-- 顶部条纹颜色 -->
+
+    <color name="light_time_line_bg_motion">#80B27511</color>
+    <color name="light_time_line_bg_sound">#8000419A</color>
+    <color name="light_time_line_bg_temperature">#80C160A5</color>
+    <color name="light_time_line_bg_humidity">#8003BCC9</color>
+    <color name="light_time_line_bg_io">#8057340E</color>
+    <color name="light_time_line_bg_human">#80DB2A35</color>
+    <color name="light_time_line_bg_other">#80D1C138</color>
+    <color name="light_time_line_bg_face">#80669F1B</color>
+    <color name="light_time_line_bg_doorbellleave">#809D4CD2</color>
+</resources>
